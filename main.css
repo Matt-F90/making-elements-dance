@@ -11,3 +11,32 @@
     width: 150px;
     background-color:red;
 }
+
+.box2 {
+    background-color: black;
+    height: 150px;
+    width: 0px;
+    margin: 25px;
+    animation-name: growing;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes growing {
+    from {
+        width: 0px
+    }
+    to {
+        width: 150px;
+    }
+}
+
+.box3 {
+    background-color: orange;
+    height: 100px;
+    width: 100px;
+    transform: skewX(10deg);
+}
